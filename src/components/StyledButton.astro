@@ -1,0 +1,12 @@
+---
+const props = Astro.props as astroHTML.JSX.ButtonHTMLAttributes;
+---
+
+<style>
+    .styled-button {
+        all: unset;
+        background: black;
+        color: white;
+    }
+</style>
+<button {...props} class="styled-button">Styled Button here</button>
